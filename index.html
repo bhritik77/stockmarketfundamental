@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share Market Fundamentals</title>
+  
+  <!-- Linking Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Remix Icon -->
+   <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- 🔹 Main Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      
+      <!-- 🔸 Logo + Name -->
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="logo" class="w-40 h-full" />
+      </div>
+
+<!-- 🔸 Desktop Menu -->
+<nav class="hidden md:flex space-x-6 font-medium">
+  <a href="index.html" class="hover:text-[#16a34a]">Home</a>
+    <a href="about-us.html" class="hover:text-[#16a34a]">About Us</a>
+
+
+  <!-- Our Courses -->
+  <div class="relative group">
+    <div class="flex items-center hover:text-[#16a34a] cursor-pointer">
+      Our Courses
+      <i class="ri-arrow-drop-down-fill"></i>
+    </div>
+
+    <!-- Dropdown -->
+    <ul class="absolute left-0 pt-2 w-64 bg-white shadow-lg rounded-md opacity-0 translate-y-2
+               group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto z-50">
+      <li class="text-center p-3 border-b border-gray-200 hover:text-[#16a34a]">
+        <a href="certificate.html">Certificate in <br> Fundamental Analysis</a>
+      </li>
+    </ul>
+  </div>
+
+  <a href="contact-us.html" class="hover:text-[#16a34a]">Contact Us</a>
+</nav>
+
+
+
+      <!-- 🔸 Mobile Menu Icon -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 🔸 Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden text-center">
+      <a href="index.html" class="block py-2 text-sm hover:text-[#16a34a]">Home</a>
+            <a href="about-us.html" class="block py-2 text-sm hover:text-[#16a34a]">About Us</a>
+
+      <div class="our-courses flex flex-col justify-center">
+        <button class="courseBtn block py-2 text-sm hover:text-[#16a34a]">Our Courses<i class="ri-arrow-drop-down-fill"></i></button>
+      <ul class="hidden coursesDropdownM">
+          <li class="block py-2 text-sm hover:text-[#16a34a] text-center p-2 border-1 border-gray-200"><a href="certificate.html">Certificate in <br> Fundamental Analysis</a></li>
+        </ul>
+      </div>
+      <a href="contact-us.html" class="block py-2 text-sm hover:text-[#16a34a]">Contact Us</a>
+    </div>
+  </header>
+
+<section class="relative w-screen h-screen text-white flex items-center justify-center overflow-hidden" style="background: linear-gradient(to bottom right, #0a0f1f, #1b2735);">
+  
+  <!-- Background Image Layer -->
+  <div class="absolute inset-0">
+    <img src="images/hero-bg.jpg" alt="Stars Background" class="w-full h-full object-cover opacity-40">
+  </div>
+
+  <!-- Dark Overlay to Keep Text Visible -->
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-5xl px-6 text-center z-10">
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      Master the Art of Smart Investing with 
+      <span class="text-[#16a34a]">
+        Fundamental Analysis
+      </span>
+    </h1>
+    
+    <!-- Subtext -->
+    <p class="mt-4 text-gray-300 max-w-3xl mx-auto">
+      Learn to evaluate stocks and financial instruments using proven, time-tested methods. 
+      Gain practical skills in EPS, P/E Ratio, P/B Ratio, Debt-to-Equity, and RoE, 
+      and step confidently into the stock market.
+    </p>
+    
+    <!-- CTA Buttons -->
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="contact-us.html" 
+         class="px-6 py-3 bg-[#16a34a] text-white border-2 border-white rounded-full font-medium hover:bg-green-800 transition">
+        Enroll Now
+      </a>
+      <a href="certificate.html" 
+         class="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition">
+        View Course Details
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section class="bg-white py-20 md:pt-40">
+  <div class="grid md:grid-cols-2 items-center">
+    
+    <!-- Left Image -->
+    <div class="w-full h-full">
+      <img src="images/stockmarket.jpeg" alt="About Us" 
+           class="w-full h-full object-cover">
+    </div>
+    
+    <!-- Right Content -->
+    <div class="p-10 md:p-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+        About <span class="text-green-500">Share Market Fundamentals</span>
+      </h2>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        At Share Market Fundamentals, we empower aspiring investors with the skills and 
+        knowledge needed to navigate the complex world of finance. Our mission is to make 
+        fundamental analysis simple, practical, and effective for everyone.
+      </p>
+      <p class="text-gray-600 mb-8 leading-relaxed">
+        From understanding key metrics like EPS, P/E Ratio, and Debt-to-Equity, to making 
+        confident investment decisions, our training is designed to help you succeed in the 
+        stock market.
+      </p>
+      <a href="about-us.html" 
+         class="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-full shadow hover:bg-green-600 transition">
+        Learn More About Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Course Teaser Section -->
+<section class="bg-white py-20 ">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center border-2 border-gray-200 p-5 rounded-xl">
+
+    <!-- Left Image -->
+    <div class="bg-gray-100 w-full h-full flex items-center justify-center ">
+      <img src="images/course.jpeg" alt="Certificate in Fundamental Analysis" class="w-full h-full object-cover shadow-xl rounded-xl">
+    </div>
+
+    <!-- Right Card -->
+    <div class="bg-white shadow-xl rounded-xl p-8 border border-gray-200">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Certificate in Fundamental Analysis
+      </h2>
+      <p class="text-gray-700 mb-6">
+        Master the art of smart investing with our expertly designed course, covering 
+        key ratios like EPS, P/E, P/B, Debt-to-Equity, and RoE. Learn practical, 
+        time-tested methods to make confident long-term investment decisions.
+      </p>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-start">
+          <span class="text-green-500 text-xl mr-3">✔</span>
+          <span>Comprehensive coverage of essential stock market ratios</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 text-xl mr-3">✔</span>
+          <span>Practical techniques with real-world case studies</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 text-xl mr-3">✔</span>
+          <span>Guidance from seasoned market experts</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 text-xl mr-3">✔</span>
+          <span>Flexible batch timings – weekdays & weekends</span>
+        </li>
+      </ul>
+      <a href="certificate.html" 
+         class="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-full shadow-md hover:bg-green-600 transition">
+        Explore the Course
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  
+  
+
+  <!-- ✅ JS for Menu Toggle -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
